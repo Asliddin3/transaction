@@ -68,18 +68,6 @@ type Address struct {
 	Street   string
 }
 
-type fullInfo struct {
-	Name         string
-	Categoryname string
-	typename     string
-	Model        string
-	Price        float64
-	Amount       int
-	storeName    string
-	District     string
-	Street       string
-}
-
 func main() {
 	dsn := "host=localhost user=postgres password=compos1995 dbname=productdb port=5432 sslmode=disable TimeZone=Asia/Tashkent"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
