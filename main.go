@@ -69,7 +69,7 @@ type Address struct {
 }
 
 func main() {
-	dsn := "host=localhost user=postgres password=compos1995 dbname=productdb port=5432 sslmode=disable TimeZone=Asia/Tashkent"
+	dsn := "host=localhost user=postgres password=123 dbname=productdb port=5432 sslmode=disable TimeZone=Asia/Tashkent"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		fmt.Println(err)
