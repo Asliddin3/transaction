@@ -103,6 +103,7 @@ func main() {
 			},
 		},
 	}
+	
 	if err:= tx.Create(&product).Error;err!=nil{
 		tx.Rollback()
 		fmt.Println(err)
